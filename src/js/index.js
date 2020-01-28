@@ -6,26 +6,17 @@ const reverseString = string => {
     return string.split('').reverse().join('');
 };
 
-const calculator = {
-    add(a, b) {
-        return a + b;
-    },
-
-    subtract(a, b) {
-        return a - b;
-    },
-
-    divide(a, b) {
-        return a / b;
-    },
-
-    multiply(a, b) {
-        return a * b;
+class Calculator {
+    constructor(a, b) {
+        this.add = a + b;
+        this.subtract = a - b;
+        this.divide = a / b;
+        this.multiply = a * b;
     }
-};
+}
 
 export {
     capitalize,
     reverseString,
-    calculator
+    Calculator
 };
