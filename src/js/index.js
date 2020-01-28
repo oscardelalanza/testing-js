@@ -23,3 +23,9 @@ const calculator = {
         return a * b;
     }
 };
+
+export {
+    capitalize,
+    reverseString,
+    calculator
+};
