@@ -1,4 +1,4 @@
-import { capitalize, reverseString, caesar, Calculator } from "../js";
+import { capitalize, reverseString, caesar, Calculator, analyze } from "../js";
 
 const calculator = new Calculator(10, 2);
 
