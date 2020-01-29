@@ -13,7 +13,7 @@ test("Takes a string and returns it reversed", () => {
 test("Encodes the string using caesar cypher", () => {
   expect(
     caesar(
-    `A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R,
+      `A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R,
     S, T, U, V, X, Y, Z, a, b, c, d, e, f, g, h, i, j, k,
     l, m, n, o, p, q, r, s, t, u v, x, y, z.!`
     )
@@ -22,6 +22,15 @@ test("Encodes the string using caesar cypher", () => {
     V, W, X, Y, A, B, C, d, e, f, g, h, i, j, k, l, m, n,
     o, p, q, r, s, t, u, v, w, x y, a, b, c.!`
   );
+});
+
+test("Returns an object with average, min, max, and length of array", () => {
+  expect(analyze([1, 8, 3, 4, 2, 6])).toStrictEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6
+  });
 });
 
 test("Calculator add", () => {
