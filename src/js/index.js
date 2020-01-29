@@ -5,7 +5,7 @@ const reverseString = string => string
   .reverse()
   .join('');
 
-const getChar = char => {
+const getChar = (char) => {
   let charCode = char.charCodeAt(0) + 3;
   if (charCode > 90 && charCode < 97) {
     charCode = 65 + (charCode - 90) - 1;
@@ -16,7 +16,7 @@ const getChar = char => {
   return charCode;
 };
 
-const caesar = string => {
+const caesar = (string) => {
   const newString = string.split('');
   for (let i = 0; i < newString.length; i += 1) {
     if (newString[i].match(/\w/)) {
