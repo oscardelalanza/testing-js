@@ -1,24 +1,9 @@
-const capitalize = string => {
-  return string[0].toUpperCase() + string.substr(1, string.length);
-};
+const capitalize = string => string[0].toUpperCase() + string.substr(1, string.length);
 
-const reverseString = string => {
-  return string
-    .split("")
-    .reverse()
-    .join("");
-};
-
-const caesar = string => {
-  string = string.split("");
-  for (let i = 0; i < string.length; i++) {
-    if (string[i].match(/\w/)) {
-      let charCode = getChar(string[i]);
-      string[i] = String.fromCharCode(charCode);
-    }
-  }
-  return string.join("");
-};
+const reverseString = string => string
+  .split('')
+  .reverse()
+  .join('');
 
 const getChar = char => {
   let charCode = char.charCodeAt(0) + 3;
@@ -31,14 +16,23 @@ const getChar = char => {
   return charCode;
 };
 
-const analyze = arr => {
-  return {
-    average: arr.reduce((acc, el) => acc + el, 0) / arr.length,
-    min: Math.min(...arr),
-    max: Math.max(...arr),
-    length: arr.length
-  };
+const caesar = string => {
+  const newString = string.split('');
+  for (let i = 0; i < newString.length; i += 1) {
+    if (newString[i].match(/\w/)) {
+      const charCode = getChar(newString[i]);
+      newString[i] = String.fromCharCode(charCode);
+    }
+  }
+  return newString.join('');
 };
+
+const analyze = arr => ({
+  average: arr.reduce((acc, el) => acc + el, 0) / arr.length,
+  min: Math.min(...arr),
+  max: Math.max(...arr),
+  length: arr.length,
+});
 
 class Calculator {
   constructor(a, b) {
@@ -49,4 +43,6 @@ class Calculator {
   }
 }
 
-export { capitalize, reverseString, Calculator, caesar, analyze };
+export {
+  capitalize, reverseString, Calculator, caesar, analyze,
+};
