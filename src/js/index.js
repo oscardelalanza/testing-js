@@ -5,8 +5,8 @@ const reverseString = string => string
   .reverse()
   .join('');
 
-const getChar = (char) => {
-  let charCode = char.charCodeAt(0) + 3;
+const getChar = (char, key) => {
+  let charCode = char.charCodeAt(0) + key;
   if (charCode > 90 && charCode < 97) {
     charCode = 65 + (charCode - 90) - 1;
   }
@@ -16,11 +16,11 @@ const getChar = (char) => {
   return charCode;
 };
 
-const caesar = (string) => {
+const caesar = (string, key) => {
   const newString = string.split('');
   for (let i = 0; i < newString.length; i += 1) {
     if (newString[i].match(/\w/)) {
-      const charCode = getChar(newString[i]);
+      const charCode = getChar(newString[i], key);
       newString[i] = String.fromCharCode(charCode);
     }
   }
@@ -35,11 +35,20 @@ const analyze = arr => ({
 });
 
 class Calculator {
-  constructor(a, b) {
-    this.add = a + b;
-    this.subtract = a - b;
-    this.divide = a / b;
-    this.multiply = a * b;
+  static add(a, b) {
+    return a + b;
+  }
+
+  static subtract(a, b) {
+    return a - b;
+  }
+
+  static divide(a, b) {
+    return a / b;
+  }
+
+  static multiply(a, b) {
+    return a * b;
   }
 }
 

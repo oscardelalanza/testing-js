@@ -2,8 +2,6 @@ import {
   capitalize, reverseString, caesar, Calculator, analyze,
 } from '../js';
 
-const calculator = new Calculator(10, 2);
-
 test('Takes a string and returns that with first character capitalized', () => {
   expect(capitalize('my string')).toBe('My string');
 });
@@ -17,7 +15,7 @@ test('Encodes the string using caesar cypher', () => {
     caesar(
       `A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R,
     S, T, U, V, X, Y, Z, a, b, c, d, e, f, g, h, i, j, k,
-    l, m, n, o, p, q, r, s, t, u v, x, y, z.!`,
+    l, m, n, o, p, q, r, s, t, u v, x, y, z.!`, 3,
     ),
   ).toBe(
     `D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U,
@@ -36,17 +34,17 @@ test('Returns an object with average, min, max, and length of', () => {
 });
 
 test('Calculator add', () => {
-  expect(calculator.add).toBe(12);
+  expect(Calculator.add(4, 8)).toBe(12);
 });
 
 test('Calculator subtract', () => {
-  expect(calculator.subtract).toBe(8);
+  expect(Calculator.subtract(12, 4)).toBe(8);
 });
 
 test('Calculator divide', () => {
-  expect(calculator.divide).toBe(5);
+  expect(Calculator.divide(10, 2)).toBe(5);
 });
 
 test('Calculator multiply', () => {
-  expect(calculator.multiply).toBe(20);
+  expect(Calculator.multiply(5, 4)).toBe(20);
 });
