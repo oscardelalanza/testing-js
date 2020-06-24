@@ -11,7 +11,7 @@ you can find the original description in [The Odin Project](https://www.theodinp
 
 ## Getting Started
 
-This is a project for is a testing practice of the following:
+This is a testing practice project of the following:
 
 - `Capitalize(string)` takes a string and returns that string with the first character capitalized.
 
