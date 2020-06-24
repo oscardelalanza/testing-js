@@ -26,6 +26,31 @@ This is a testing practice project of the following:
 
 ![testing](./screenshots/test.png)
 
+> To get a local copy up and running follow these simple example steps.
+ 
+### Prerequisites
+
+- `npm`
+- `git`
+
+### Setup
+
+To clone the project into your local environment do the following
+
+- open a new `terminal` window and navigate to the directory where the project will be stored
+- run the command `git clone git@github.com:oscardelalanza/testing-js.git`
+- run the command `cd testing-js` to enter to the project directory
+
+### Install
+
+To install the requires packages do the following
+
+- inside `testing-js` directory run the command `npm install`
+
+### Run tests
+
+- run the command `npm run test`
+
 ## Authors
 
 👤 **Oscar De La Lanza**
