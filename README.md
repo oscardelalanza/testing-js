@@ -10,10 +10,19 @@ you can find the original description in [The Odin Project](https://www.theodinp
 - JEST
 
 ## Getting Started
-Install dependencies with `npm i` and run tests by typing `jest src/test/index.test.js` in terminal
 
-To get a local copy up and running follow these simple example steps.
-`git clone git@github.com:oscardelalanza/testing-js.git`
+This is a project for is a testing practice of the following:
+
+- `Capitalize(string)` takes a string and returns that string with the first character capitalized.
+
+- `ReverseString(string)` takes a string and returns it reversed.
+
+- A `calculator` object that contains the basic operations: `add`, `subtract`, `divide`, and `multiply`.
+
+- Caesar Cipher. [Read about it on this website](http://practicalcryptography.com/ciphers/caesar-cipher)
+
+- Array Analysis. Write a function that takes an array of numbers and returns an object with the following properties:
+ `average`, `min`, `max`, and `length`.
 
 ![testing](./screenshots/test.png)
 
@@ -24,6 +33,7 @@ To get a local copy up and running follow these simple example steps.
 - Github: [@oscardelalanza](https://github.com/oscardelalanza)
 - Twitter: [@oscardelalanza](https://twitter.com/oscardelalanza)
 - Linkedin: [Oscar De La Lanza](https://www.linkedin.com/in/oscardelalanza/)
+- Email: oscardelalanza@gmail.com
 
 👤 **Mark Baidebura**
 
