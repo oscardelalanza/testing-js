@@ -15,6 +15,8 @@ Install dependencies with `npm i` and run tests by typing `jest src/test/index.t
 To get a local copy up and running follow these simple example steps.
 `git clone git@github.com:oscardelalanza/testing-js.git`
 
+![testing](./screenshots/test.png)
+
 ## Authors
 
 👤 **Oscar De La Lanza**
