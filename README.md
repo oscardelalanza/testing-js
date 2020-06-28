@@ -31,25 +31,33 @@ This is a testing practice project of the following:
 ### Prerequisites
 
 - `npm`
-- `git`
+- `Git`
 
 ### Setup
 
-To clone the project into your local environment do the following
+To clone the project into your local environment do the following.
 
-- open a new `terminal` window and navigate to the directory where the project will be stored
-- run the command `git clone git@github.com:oscardelalanza/testing-js.git`
-- run the command `cd testing-js` to enter to the project directory
+- Open a new `terminal` window and navigate to the directory where the project will be stored.
+- Run the command `git clone git@github.com:oscardelalanza/testing-js.git`.
+- Run the command `cd testing-js` to enter to the project directory.
 
 ### Install
 
-To install the requires packages do the following
+To install the requires packages do the following.
 
-- inside `testing-js` directory run the command `npm install`
+- Inside `testing-js` directory run the command `npm install`.
+
+### Usage
+
+- This project is only for testing.
 
 ### Run tests
 
-- run the command `npm run test`
+- Run the command `npm run test`.
+
+### Deployment
+
+- Not needed.
 
 ## Authors
 
