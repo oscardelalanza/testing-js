@@ -55,10 +55,6 @@ To install the requires packages do the following.
 
 - Run the command `npm run test`.
 
-### Deployment
-
-- Not needed.
-
 ## Authors
 
 👤 **Oscar De La Lanza**
